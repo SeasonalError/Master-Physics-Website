@@ -21,14 +21,15 @@ Run `node scripts/validate.mjs` for the source and catalogue checks. Node 20 or 
 
 ## Publish on GitHub Pages
 
-All site files are already in this repository.
+Live site: [Physics Atlas](https://seasonalerror.github.io/Master-Physics-Website/).
 
-1. In [Settings → Pages](https://github.com/SeasonalError/Master-Physics-Website/settings/pages), choose **GitHub Actions** under **Source**.
-2. Open the [publishing workflow](https://github.com/SeasonalError/Master-Physics-Website/actions/workflows/pages.yml), choose **Run workflow** on `main`, and wait for the publish job to finish.
+The repository supports the current **Deploy from a branch → main → / (root)** Pages setup. The root `index.html` loads the application assets from `dist/`, and the root `.nojekyll` keeps the static files intact. Every push to `main` automatically publishes through GitHub's built-in Pages deployment. No build or extra setup is required.
 
-Future pushes to `main` publish automatically after the one-time Pages setup. The workflow first runs the source and catalogue checks.
+The **Physics Atlas checks and publishing** workflow runs source and catalogue validation on each push. Its separate deployment job runs only when started manually, avoiding competing automatic publishers.
 
-The site uses relative asset paths and hash-based routes, so it supports `/Master-Physics-Website/` without rewrites. The workflow uploads `dist/` and follows the [GitHub Pages custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+For the optional GitHub Actions publishing mode, change [Settings → Pages](https://github.com/SeasonalError/Master-Physics-Website/settings/pages) to **GitHub Actions**, then manually run the [publishing workflow](https://github.com/SeasonalError/Master-Physics-Website/actions/workflows/pages.yml) after each update. That mode uploads `dist/` directly.
+
+Both entrypoints use relative asset paths and hash-based routes, so the site supports `/Master-Physics-Website/` without rewrites. Keep the markup in root `index.html` and `dist/index.html` aligned when changing the page shell; only the root entrypoint's asset URLs need the `./dist/` prefix. The application, styles, and content have a single source in `dist/`.
 
 ## Maintain the content
 

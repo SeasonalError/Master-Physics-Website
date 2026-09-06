@@ -1,4 +1,4 @@
-name: Publish Physics Atlas to GitHub Pages
+name: Physics Atlas checks and publishing
 
 on:
   push:
@@ -7,23 +7,34 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: physics-atlas-checks
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate catalogue and source
+        run: node scripts/validate.mjs
+
+  # Pages is configured to deploy main / (root) automatically. Keep the
+  # optional artifact deployment manual so two publishers do not race.
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
-      - name: Validate catalogue and source
-        run: node scripts/validate.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
