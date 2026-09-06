@@ -19,18 +19,16 @@ This is an authored static site, not a framework build. No dependency installati
 
 Run `node scripts/validate.mjs` for the source and catalogue checks. Node 20 or later is recommended. The checks validate module syntax, local assets, catalogue relationships, external URL shapes, book/exercise coverage, and solution-label consistency. They do not claim to verify every remote URL or perform browser testing.
 
-## Publish to a new GitHub repository
+## Publish on GitHub Pages
 
-This is the complete source for [SeasonalError/Master-Physics-Website](https://github.com/SeasonalError/Master-Physics-Website).
+All site files are already in this repository.
 
-1. Create the new repository in your account.
-2. Add this source at the repository root, retaining `dist/`, `scripts/`, `package.json`, and `.github/workflows/pages.yml`.
-3. In the new repository's Settings → Pages, select **GitHub Actions** as the source.
-4. Push to `main` or manually run the **Publish Physics Atlas to GitHub Pages** workflow.
+1. In [Settings → Pages](https://github.com/SeasonalError/Master-Physics-Website/settings/pages), choose **GitHub Actions** under **Source**.
+2. Open the [publishing workflow](https://github.com/SeasonalError/Master-Physics-Website/actions/workflows/pages.yml), choose **Run workflow** on `main`, and wait for the publish job to finish.
 
-The site uses relative asset paths and hash-based routes, so it works at a project URL such as `/Master-Physics-Website/` without rewrites. The supplied workflow follows the [GitHub Pages custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+Future pushes to `main` publish automatically after the one-time Pages setup. The workflow first runs the source and catalogue checks.
 
-The `.openai/hosting.json` in the Sites checkout belongs to that specific hosted Site. It is not needed for GitHub Pages and is excluded from the downloadable source bundle.
+The site uses relative asset paths and hash-based routes, so it supports `/Master-Physics-Website/` without rewrites. The workflow uploads `dist/` and follows the [GitHub Pages custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ## Maintain the content
 
