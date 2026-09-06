@@ -1,0 +1,9 @@
+{
+  "name": "physics-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An orbital physics learning library with university practice and semester study paths.",
+  "scripts": { "check": "node scripts/validate.mjs" },
+  "engines": { "node": ">=20" }
+}
