@@ -1,0 +1,4500 @@
+{
+  "checkedAt": "2026-09-07",
+  "baselineCommit": "6a98ba3049722506d7eb1fcfa4b2c14bad0b311e",
+  "catalogueResources": 274,
+  "uniqueCatalogueUrls": 281,
+  "retrieved": 270,
+  "verificationIncomplete": 11,
+  "scope": "Catalogue source and answer URLs; source metadata and answer coverage; original worked examples. Collection links may contain many individual downloads.",
+  "urls": [
+    {
+      "url": "https://mitpress.mit.edu/9781891389221/classical-mechanics/",
+      "resourceIds": [
+        "taylor"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/FD23E188E2BDCDB40199CFE3386EC08F",
+      "resourceIds": [
+        "griffiths-em"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://books.google.com/books/about/Quantum_Mechanics.html?id=dU4wAAAAIAAJ",
+      "resourceIds": [
+        "schiff"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.wiley.com/en-kr/Mathematical%2BMethods%2Bin%2Bthe%2BPhysical%2BSciences%2C%2B3rd%2BEdition-p-9780471198260",
+      "resourceIds": [
+        "boas"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/algebra-classic-version/P200000006078/9780137980994",
+      "resourceIds": [
+        "artin"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.penguin.com.au/books/quantum-mechanics-the-theoretical-minimum-9780141977812",
+      "resourceIds": [
+        "susskind"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://store.doverpublications.com/products/9780486691862",
+      "resourceIds": [
+        "szabo"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://openstax.org/details/books/university-physics-volume-1",
+      "resourceIds": [
+        "openstax-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://openstax.org/details/books/university-physics-volume-2",
+      "resourceIds": [
+        "openstax-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://openstax.org/details/books/university-physics-volume-3",
+      "resourceIds": [
+        "openstax-3"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://openstax.org/details/books/astronomy-2e",
+      "resourceIds": [
+        "openstax-astronomy"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/",
+      "resourceIds": [
+        "feynman"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.eftaylor.com/spacetimephysics/",
+      "resourceIds": [
+        "spacetime-physics"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.eftaylor.com/exploringblackholes/",
+      "resourceIds": [
+        "exploring-blackholes"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://global.oup.com/academic/product/an-introduction-to-thermal-physics-9780192895547",
+      "resourceIds": [
+        "schroeder"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 202,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "browser_verification_required"
+        }
+      ]
+    },
+    {
+      "url": "https://global.oup.com/ukhe/product/concepts-in-thermal-physics-9780199562107",
+      "resourceIds": [
+        "blundell"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 202,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "browser_verification_required"
+        }
+      ]
+    },
+    {
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/optics/P200000006793/9780137526420",
+      "resourceIds": [
+        "hecht"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://global.oup.com/academic/product/atomic-physics-9780198506966",
+      "resourceIds": [
+        "foot"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 202,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "browser_verification_required"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wiley.com/en-us/Introduction%2Bto%2BSolid%2BState%2BPhysics%2C%2B8th%2BEdition-p-9780471415268",
+      "resourceIds": [
+        "kittel"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "request_failed"
+        }
+      ]
+    },
+    {
+      "url": "https://www.wiley.com/en-us/Introductory%2BNuclear%2BPhysics%2C%2B3rd%2BEdition-p-9780471805533",
+      "resourceIds": [
+        "krane"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/highereducation/books/modern-particle-physics/CDFEBC9AE513DA60AA12DE015181A948",
+      "resourceIds": [
+        "thomson"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/highereducation/books/quantum-field-theory-and-the-standard-model/A4CD66B998F2C696DCC75B984A7D5799",
+      "resourceIds": [
+        "schwartz"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://store.doverpublications.com/products/9780486428277",
+      "resourceIds": [
+        "fetter"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-319-22309-4",
+      "resourceIds": [
+        "chen"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://global.oup.com/academic/product/elementary-fluid-dynamics-9780198596790",
+      "resourceIds": [
+        "acheson"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "browser_verification_required"
+        }
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+      "resourceIds": [
+        "nielsen"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.routledge.com/Lie-Algebras-In-Particle-Physics-from-Isospin-To-Unified-Theories/Georgi/p/book/9780738202334",
+      "resourceIds": [
+        "georgi"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "request_failed"
+        }
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/9783540707127",
+      "resourceIds": [
+        "gardiner"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://websites.umich.edu/~mejn/cp2/",
+      "resourceIds": [
+        "newman"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mitpress.mit.edu/9781940380087/an-introduction-to-error-analysis/",
+      "resourceIds": [
+        "taylor-errors"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mitpress.mit.edu/9781940380032/classical-mechanics-student-solutions-manual/",
+      "resourceIds": [
+        "taylor-solutions"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/dynamics-and-relativity/",
+      "resourceIds": [
+        "cambridge-dynamics",
+        "tong-dynamics"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/classical-dynamics/",
+      "resourceIds": [
+        "cambridge-classical",
+        "tong-classical"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/vector-calculus/",
+      "resourceIds": [
+        "cambridge-vector",
+        "tong-vector"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/electromagnetism/",
+      "resourceIds": [
+        "cambridge-em",
+        "tong-em"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/quantum-mechanics/",
+      "resourceIds": [
+        "tong-qm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/topics-in-quantum-mechanics/",
+      "resourceIds": [
+        "cambridge-aqm",
+        "tong-aqm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/solid-state-physics/",
+      "resourceIds": [
+        "cambridge-solids",
+        "tong-solid"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/fluid-mechanics/",
+      "resourceIds": [
+        "tong-fluid"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/kinetic-theory/",
+      "resourceIds": [
+        "tong-kinetic"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/statistical-physics/",
+      "resourceIds": [
+        "practice-cambridge-statistical",
+        "tong-stat"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/statistical-field-theory/",
+      "resourceIds": [
+        "tong-statfield"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/general-relativity/",
+      "resourceIds": [
+        "practice-cambridge-gr",
+        "tong-gr"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/cosmology/",
+      "resourceIds": [
+        "tong-cosmo"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/quantum-field-theory/",
+      "resourceIds": [
+        "practice-cambridge-qft",
+        "tong-qft"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/gauge-theory/",
+      "resourceIds": [
+        "tong-gauge"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/particle-physics/",
+      "resourceIds": [
+        "tong-particle"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://davidtong.org/teaching/standard-model/",
+      "resourceIds": [
+        "tong-sm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.damtp.cam.ac.uk/user/dbs26/PQM.html",
+      "resourceIds": [
+        "skinner-pqm"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 502: Bad Gateway"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "request_failed"
+        }
+      ]
+    },
+    {
+      "url": "https://www.damtp.cam.ac.uk/user/dbs26/AQFT.html",
+      "resourceIds": [
+        "skinner-aqft"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 502: Bad Gateway"
+        },
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 502: Bad Gateway"
+        }
+      ]
+    },
+    {
+      "url": "https://math.mit.edu/~shor/435-LN/",
+      "resourceIds": [
+        "shor-notes"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+      "resourceIds": [
+        "mit-mech"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/",
+      "resourceIds": [
+        "mit-mech-hard"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/",
+      "resourceIds": [
+        "mit-em"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/",
+      "resourceIds": [
+        "mit-waves",
+        "waves-review"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/",
+      "resourceIds": [
+        "mit-thermal"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/",
+      "resourceIds": [
+        "mit-sr"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/",
+      "resourceIds": [
+        "mit-qm1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/",
+      "resourceIds": [
+        "mit-qm2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/",
+      "resourceIds": [
+        "mit-qm3"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-321-quantum-theory-i-fall-2017/",
+      "resourceIds": [
+        "mit-gradqm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/",
+      "resourceIds": [
+        "mit-nuclear"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2006/",
+      "resourceIds": [
+        "mit-solid"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2006/",
+      "resourceIds": [
+        "mit-plasma"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/",
+      "resourceIds": [
+        "mit-gr"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-224-exploring-black-holes-general-relativity-astrophysics-spring-2003/",
+      "resourceIds": [
+        "mit-blackholes"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/",
+      "resourceIds": [
+        "mit-cosmology"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-421-atomic-and-optical-physics-i-spring-2014/",
+      "resourceIds": [
+        "mit-atomic"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/",
+      "resourceIds": [
+        "mit-qi"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/",
+      "resourceIds": [
+        "mit-juniorlab"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "resourceIds": [
+        "mit-linear"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/",
+      "resourceIds": [
+        "mit-odes"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/assignments/",
+      "resourceIds": [
+        "mech-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/pages/exams/",
+      "resourceIds": [
+        "mech-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/exam1/",
+      "resourceIds": [
+        "mech-exam1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/exam-1-solutions/",
+      "resourceIds": [
+        "mech-exam1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/final/",
+      "resourceIds": [
+        "mech-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/final-exam-solutions/",
+      "resourceIds": [
+        "mech-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/resources/presentati_w15d2/",
+      "resourceIds": [
+        "em-practice"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/resources/mit8_03scf16_practicefinalexam1_solutions/",
+      "resourceIds": [
+        "waves-review"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/pages/exams/",
+      "resourceIds": [
+        "thermal-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/resources/mit8_044s13_final/",
+      "resourceIds": [
+        "thermal-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/resources/mit8_044s13_final_s/",
+      "resourceIds": [
+        "thermal-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/pages/assignments/",
+      "resourceIds": [
+        "sr-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/pages/exams/",
+      "resourceIds": [
+        "sr-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/resources/quiz1_2006_qns/",
+      "resourceIds": [
+        "sr-quiz1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/resources/quiz1_2006_sol/",
+      "resourceIds": [
+        "sr-quiz1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/pages/assignments/",
+      "resourceIds": [
+        "qm-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/pages/exams/",
+      "resourceIds": [
+        "qm-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/pages/assignments/",
+      "resourceIds": [
+        "qm3-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-321-quantum-theory-i-fall-2017/pages/assignments/",
+      "resourceIds": [
+        "gradqm-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/pages/assignments/",
+      "resourceIds": [
+        "particle-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/resources/mit8_701f20_pset1/",
+      "resourceIds": [
+        "particle-pset1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/resources/mit8_701f20_pset1_soln/",
+      "resourceIds": [
+        "particle-pset1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/pages/recitations/",
+      "resourceIds": [
+        "particle-recitations"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2006/pages/assignments/",
+      "resourceIds": [
+        "solid-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2006/pages/assignments/",
+      "resourceIds": [
+        "plasma-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/pages/assignments/",
+      "resourceIds": [
+        "gr-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/pages/exams/",
+      "resourceIds": [
+        "cosmo-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-421-atomic-and-optical-physics-i-spring-2014/pages/assignments/",
+      "resourceIds": [
+        "amo-psets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/exams/",
+      "resourceIds": [
+        "linear-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.maths.cam.ac.uk/undergrad/pastpapers/past-ia-ib-and-ii-examination-papers",
+      "resourceIds": [
+        "tripos"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.maths.cam.ac.uk/undergrad/pastpapers/example-ia-solutions",
+      "resourceIds": [
+        "tripos"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/past-papers",
+      "resourceIds": [
+        "oxford-mmath"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.physics.ox.ac.uk/study/undergraduates/how-apply/engineering-and-science-admissions-test-esat/pat-past-papers",
+      "resourceIds": [
+        "oxford-pat"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.physics.ox.ac.uk/system/files/file_attachments/pat-2019-samplesolutions_0.pdf",
+      "resourceIds": [
+        "oxford-pat"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://olympiads.hbcse.tifr.res.in/how-to-prepare/past-papers/",
+      "resourceIds": [
+        "inpho"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.tifr.res.in/academics/past_question_papers.php",
+      "resourceIds": [
+        "tifr-gs"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://websites.umich.edu/~mejn/cp2/exercises.html",
+      "resourceIds": [
+        "newman-exercises"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/pages/assignments/",
+      "resourceIds": [
+        "practice-mech-long-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/pages/exams/",
+      "resourceIds": [
+        "practice-mech-long-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/pages/assignments/",
+      "resourceIds": [
+        "practice-mech-advanced-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/pages/assignments/",
+      "resourceIds": [
+        "practice-mech2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/pages/assignments/",
+      "resourceIds": [
+        "practice-mech3-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/pages/assignments/",
+      "resourceIds": [
+        "practice-em-advanced-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/pages/exams/",
+      "resourceIds": [
+        "practice-em-advanced-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/resources/q2_s04_sol/",
+      "resourceIds": [
+        "practice-em-advanced-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/pages/assignments/",
+      "resourceIds": [
+        "practice-em2-2012-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/pages/exams/",
+      "resourceIds": [
+        "practice-em2-2012-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-311-electromagnetic-theory-spring-2004/pages/assignments/",
+      "resourceIds": [
+        "practice-em-grad-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-311-electromagnetic-theory-spring-2004/pages/exams/",
+      "resourceIds": [
+        "practice-em-grad-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/resources/exams/index.html",
+      "resourceIds": [
+        "practice-waves-2016-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/assignments/",
+      "resourceIds": [
+        "practice-qm1-2016-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/pages/exams/",
+      "resourceIds": [
+        "practice-qm1-2016-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-qm2-2013-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/pages/exams/",
+      "resourceIds": [
+        "practice-qm2-2013-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-stat1-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-stat-grad1-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/pages/exams/",
+      "resourceIds": [
+        "practice-stat-grad1-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/pages/assignments/",
+      "resourceIds": [
+        "practice-stat-grad2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/pages/exams/",
+      "resourceIds": [
+        "practice-stat-grad2-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-71-optics-spring-2009/pages/assignments/",
+      "resourceIds": [
+        "practice-optics-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-71-optics-spring-2009/pages/exams/",
+      "resourceIds": [
+        "practice-optics-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/5-61-physical-chemistry-fall-2017/pages/exams/",
+      "resourceIds": [
+        "practice-chem1-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/5-73-introductory-quantum-mechanics-i-fall-2005/pages/assignments/",
+      "resourceIds": [
+        "practice-chem2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/5-73-introductory-quantum-mechanics-i-fall-2005/pages/exams/",
+      "resourceIds": [
+        "practice-chem2-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/5-74-introductory-quantum-mechanics-ii-spring-2009/pages/assignments/",
+      "resourceIds": [
+        "practice-chem3-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-511-theory-of-solids-i-fall-2004/pages/assignments/",
+      "resourceIds": [
+        "practice-solids-grad-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-513-many-body-theory-for-condensed-matter-systems-fall-2004/pages/assignments/",
+      "resourceIds": [
+        "practice-manybody-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/22-02-introduction-to-applied-nuclear-physics-spring-2012/pages/assignments/",
+      "resourceIds": [
+        "practice-nuclear-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/22-02-introduction-to-applied-nuclear-physics-spring-2012/pages/exams/",
+      "resourceIds": [
+        "practice-nuclear-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-811-particle-physics-ii-fall-2005/pages/assignments/",
+      "resourceIds": [
+        "practice-particle-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-324-relativistic-quantum-field-theory-ii-fall-2010/pages/assignments/",
+      "resourceIds": [
+        "practice-qft2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2007/pages/assignments/",
+      "resourceIds": [
+        "practice-qft3-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-851-effective-field-theory-spring-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-qcd-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-282j-introduction-to-astronomy-spring-2006/pages/assignments/",
+      "resourceIds": [
+        "practice-astro1-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-282j-introduction-to-astronomy-spring-2006/pages/exams/",
+      "resourceIds": [
+        "practice-astro1-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-901-astrophysics-i-spring-2006/pages/assignments/",
+      "resourceIds": [
+        "practice-astro2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-cosmology-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/1-63-advanced-fluid-dynamics-of-the-environment-fall-2002/pages/assignments/",
+      "resourceIds": [
+        "practice-fluids-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/pages/assignments/",
+      "resourceIds": [
+        "practice-noneq-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/assignments/",
+      "resourceIds": [
+        "practice-math-odes-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/exams/",
+      "resourceIds": [
+        "practice-math-odes-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-303-linear-partial-differential-equations-fall-2006/pages/assignments/",
+      "resourceIds": [
+        "practice-math-pde-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-303-linear-partial-differential-equations-fall-2006/pages/exams/",
+      "resourceIds": [
+        "practice-math-pde-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/pages/problem-solving/",
+      "resourceIds": [
+        "practice-em-teal"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-422-atomic-and-optical-physics-ii-spring-2013/pages/assignments/",
+      "resourceIds": [
+        "practice-amo2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/5-72-non-equilibrium-statistical-mechanics-spring-2012/pages/assignments/",
+      "resourceIds": [
+        "practice-noneq-chem"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/assignments/",
+      "resourceIds": [
+        "practice-artin-algebra"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-755-introduction-to-lie-groups-fall-2004/pages/assignments/",
+      "resourceIds": [
+        "practice-lie-groups"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-60-symmetry-structure-and-tensor-properties-of-materials-fall-2005/pages/assignments/",
+      "resourceIds": [
+        "practice-crystal-symmetry"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-369-mathematical-methods-in-nanophotonics-spring-2008/pages/assignments/",
+      "resourceIds": [
+        "practice-nanophotonics"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-021j-introduction-to-modeling-and-simulation-spring-2012/pages/assignments/",
+      "resourceIds": [
+        "practice-modeling"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/22-15-essential-numerical-methods-fall-2014/pages/assignments/",
+      "resourceIds": [
+        "practice-numerical"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-summer-2020/pages/assignments/",
+      "resourceIds": [
+        "practice-comp-sci"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/quiz-1/",
+      "resourceIds": [
+        "practice-engineering-quiz-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/final-exam/",
+      "resourceIds": [
+        "practice-engineering-final-exam"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.physics.harvard.edu/undergrad/problems",
+      "resourceIds": [
+        "practice-harvard-morin"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://sites.astro.caltech.edu/~golwala/ph106ab/",
+      "resourceIds": [
+        "practice-caltech-mechanics"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://phy.princeton.edu/academics/graduate-program/degree-requirements/preliminary-exams",
+      "resourceIds": [
+        "practice-princeton-prelims"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://oyc.yale.edu/physics/phys-200/exam-1",
+      "resourceIds": [
+        "practice-yale-cm-midterm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://oyc.yale.edu/physics/phys-200/exam-2",
+      "resourceIds": [
+        "practice-yale-cm-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://oyc.yale.edu/physics/phys-201/exam-1",
+      "resourceIds": [
+        "practice-yale-em-midterm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://oyc.yale.edu/physics/phys-201/exam-2",
+      "resourceIds": [
+        "practice-yale-em-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://preskill.caltech.edu/ph219/ph219_2021-22.html",
+      "resourceIds": [
+        "practice-caltech-qi-2021"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.preskill.caltech.edu/ph219/ph219_2006-07.html",
+      "resourceIds": [
+        "practice-caltech-qi-2006"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15271h1.pdf",
+      "resourceIds": [
+        "practice-oxford-fluid-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15272h1corrected.pdf",
+      "resourceIds": [
+        "practice-oxford-aqft-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15757h1.pdf",
+      "resourceIds": [
+        "practice-oxford-manybody-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15276h1-correction.pdf",
+      "resourceIds": [
+        "practice-oxford-cosmo-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a19021h1.pdf",
+      "resourceIds": [
+        "practice-oxford-collective-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15090h1.pdf",
+      "resourceIds": [
+        "practice-oxford-groups-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15089h1.pdf",
+      "resourceIds": [
+        "practice-oxford-kinetic-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/radiative-processes-and-high-energy-astrophysics.pdf",
+      "resourceIds": [
+        "practice-oxford-astro-2024"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15088h1.pdf",
+      "resourceIds": [
+        "practice-oxford-qft-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a1853381.pdf",
+      "resourceIds": [
+        "practice-oxford-matter-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15278s1-collisionless-plasma-physics.pdf",
+      "resourceIds": [
+        "practice-oxford-collisionless-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/noneqsp-ht2025-minip-v2.pdf",
+      "resourceIds": [
+        "practice-oxford-noneq-project-2025"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/nonequilibrium_statistical_physics_2018.pdf",
+      "resourceIds": [
+        "practice-oxford-noneq-2018"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/collisional_plasma_physics_2019.pdf",
+      "resourceIds": [
+        "practice-oxford-collisional-2019"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/resources/mit8_13-14f16-s17exp49/",
+      "resourceIds": [
+        "practice-lab-nmr"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/resources/mit8_13-14f16-s17exp46/",
+      "resourceIds": [
+        "practice-lab-radio"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/resources/mit8_13-14f16-s17exp11/",
+      "resourceIds": [
+        "practice-lab-pumping"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-224-exploring-black-holes-general-relativity-astrophysics-spring-2003/pages/assignments/",
+      "resourceIds": [
+        "practice-blackhole-sets"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-224-exploring-black-holes-general-relativity-astrophysics-spring-2003/pages/exams/",
+      "resourceIds": [
+        "practice-blackhole-exam"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_exam1/",
+      "resourceIds": [
+        "practice-mech-practice-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_1_solut/",
+      "resourceIds": [
+        "practice-mech-practice-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_exam2/",
+      "resourceIds": [
+        "practice-mech-practice-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_2_solut/",
+      "resourceIds": [
+        "practice-mech-practice-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_exam3/",
+      "resourceIds": [
+        "practice-mech-practice-3"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_3_solut/",
+      "resourceIds": [
+        "practice-mech-practice-3"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/practice_final/",
+      "resourceIds": [
+        "practice-mech-practice-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/resources/prac_final_solut/",
+      "resourceIds": [
+        "practice-mech-practice-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/resources/mit8_09f14_pset2/",
+      "resourceIds": [
+        "practice-mech3-set-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/resources/mit8_09f14_pset3/",
+      "resourceIds": [
+        "practice-mech3-set-3"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/resources/mit8_07f12_quiz1/",
+      "resourceIds": [
+        "practice-em2-quiz-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/resources/mit8_07f12_quizsol1/",
+      "resourceIds": [
+        "practice-em2-quiz-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/resources/mit8_07f12_quiz2/",
+      "resourceIds": [
+        "practice-em2-quiz-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/resources/mit8_07f12_quizsol2/",
+      "resourceIds": [
+        "practice-em2-quiz-2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/resources/mit8_07f12_finalexam/",
+      "resourceIds": [
+        "practice-em2-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/resources/f04_q1/",
+      "resourceIds": [
+        "practice-em-8022-f04_q1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/resources/f04_q2/",
+      "resourceIds": [
+        "practice-em-8022-f04_q2"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/resources/finalf2003/",
+      "resourceIds": [
+        "practice-em-8022-finalf2003"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/pages/assignments/",
+      "resourceIds": [
+        "expanded-nanomech-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/pages/exams/",
+      "resourceIds": [
+        "expanded-nanomech-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-57-nano-to-macro-transport-processes-spring-2012/pages/homework/",
+      "resourceIds": [
+        "expanded-nanotransport-homework"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/2-57-nano-to-macro-transport-processes-spring-2012/pages/exams/",
+      "resourceIds": [
+        "expanded-nanotransport-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/pages/assignments/",
+      "resourceIds": [
+        "expanded-nanoelectronics-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/pages/exams/",
+      "resourceIds": [
+        "expanded-nanoelectronics-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/pages/assignments/",
+      "resourceIds": [
+        "expanded-nanoprocessing-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/pages/exams/",
+      "resourceIds": [
+        "expanded-nanoprocessing-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/pages/exams/",
+      "resourceIds": [
+        "expanded-materials-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007/pages/assignments/",
+      "resourceIds": [
+        "expanded-materials-grad-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-512-theory-of-solids-ii-spring-2009/pages/assignments/",
+      "resourceIds": [
+        "expanded-solid2-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2003/pages/assignments/",
+      "resourceIds": [
+        "expanded-qft3-2003-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/8-871-selected-topics-in-theoretical-particle-physics-branes-and-gauge-theory-dynamics-fall-2004/pages/assignments/",
+      "resourceIds": [
+        "expanded-gauge-branes-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://www.mit.edu/~harlow/HarlowQFT1.pdf",
+      "resourceIds": [
+        "expanded-harlow-qft"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/pages/assignments/",
+      "resourceIds": [
+        "expanded-qi-2003-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/pages/exams/",
+      "resourceIds": [
+        "expanded-qi-2003-exams"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/mas-865j-quantum-information-science-spring-2006/pages/assignments/",
+      "resourceIds": [
+        "expanded-qi-2006-assignments"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://preskill.caltech.edu/ph219/ph219_2026.html",
+      "resourceIds": [
+        "expanded-caltech-2026"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.preskill.caltech.edu/ph219/ph219_2024.html",
+      "resourceIds": [
+        "expanded-caltech-2024"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.preskill.caltech.edu/ph219/ph219_2018.html",
+      "resourceIds": [
+        "expanded-caltech-2018"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.preskill.caltech.edu/ph219/ph219_2013-14.html",
+      "resourceIds": [
+        "expanded-caltech-2013"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.math.uwaterloo.ca/~wcleung/co781-f2016.html",
+      "resourceIds": [
+        "expanded-waterloo-communication"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": null,
+          "error": "<urlopen error timed out>"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://cs.uwaterloo.ca/~watrous/TQI/",
+      "resourceIds": [
+        "expanded-watrous-exercises"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2016.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2016"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2017.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2017"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2018.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2018"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2019.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2019"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2020.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2020"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2021.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2021"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/aqft_2022.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft_2022"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/aqft-for-particle-physics-2024.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqft-for-particle-physics-2024"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/aqt-path-integrals-and-many-particle-physics.pdf",
+      "resourceIds": [
+        "expanded-oxford-aqt-path-integrals-and-many-particle-physics"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a18926h1.pdf",
+      "resourceIds": [
+        "expanded-oxford-a18926h1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/intro_to_quantum_cmp_-_2016.pdf",
+      "resourceIds": [
+        "expanded-oxford-intro_to_quantum_cmp_-_2016"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2016.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2016"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2017.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2017"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2018.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2018"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2019.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2019"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2020.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2020"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2021.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2021"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qft_2022.pdf",
+      "resourceIds": [
+        "expanded-oxford-qft_2022"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/quantum-field-theory.pdf",
+      "resourceIds": [
+        "expanded-oxford-quantum-field-theory"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/a15088w1.pdf",
+      "resourceIds": [
+        "expanded-oxford-a15088w1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qcmp2_2016.pdf",
+      "resourceIds": [
+        "expanded-oxford-qcmp2_2016"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2017.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2017"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2018.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2018"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2019.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2019"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2020.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2020"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2021.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2021"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sites/default/files/mmathphys/documents/media/qm_2022.pdf",
+      "resourceIds": [
+        "expanded-oxford-qm_2022"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/quantum-matter.pdf",
+      "resourceIds": [
+        "expanded-oxford-quantum-matter"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://mmathphys.physics.ox.ac.uk/sitefiles/intro-topological-phases-of-matter-1.pdf",
+      "resourceIds": [
+        "expanded-oxford-intro-topological-phases-of-matter-1"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/resources/midterm/",
+      "resourceIds": [
+        "expanded-nanomech-midterm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/resources/midterm_sol/",
+      "resourceIds": [
+        "expanded-nanomech-midterm"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/resources/final/",
+      "resourceIds": [
+        "expanded-nanomech-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/resources/final_sol/",
+      "resourceIds": [
+        "expanded-nanomech-final"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/resources/mit6_701s10_textbook/",
+      "resourceIds": [
+        "expanded-baldo-nano"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        },
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://www.worldscientific.com/worldscibooks/10.1142/7885",
+      "resourceIds": [
+        "expanded-cao-nano"
+      ],
+      "outcome": "verification_incomplete",
+      "evidence": "Publisher challenge, access denial, or upstream timeout",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "request_failed"
+        }
+      ]
+    },
+    {
+      "url": "https://nptel.ac.in/courses/113104102",
+      "resourceIds": [
+        "expanded-nptel-nanoproperties"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://nptel.ac.in/courses/118104008",
+      "resourceIds": [
+        "expanded-nptel-nanocharacterization"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://nptel.ac.in/courses/118102003",
+      "resourceIds": [
+        "expanded-nptel-nanosynthesis"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/pages/lecture-notes/",
+      "resourceIds": [
+        "expanded-nanomechanics-notes"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://gwosc.org/tutorials/",
+      "resourceIds": [
+        "gwosc-tutorials"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://gwosc.org/data/",
+      "resourceIds": [
+        "gwosc-data"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/",
+      "resourceIds": [
+        "cern-data"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://opendata.cern.ch/record/50",
+      "resourceIds": [
+        "cms-tutorial"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://root.cern/doc/v638/group__Tutorials.html",
+      "resourceIds": [
+        "root-tutorials"
+      ],
+      "outcome": "retrieved",
+      "evidence": "HTTP 200",
+      "attempts": [
+        {
+          "method": "HTTP request",
+          "status": 200,
+          "error": null
+        }
+      ]
+    },
+    {
+      "url": "https://websites.umich.edu/~mejn/cp2/programs.html",
+      "resourceIds": [
+        "newman-data"
+      ],
+      "outcome": "retrieved",
+      "evidence": "Web retrieval",
+      "attempts": [
+        {
+          "method": "Web retrieval",
+          "status": "source_retrieved"
+        }
+      ]
+    }
+  ]
+}
