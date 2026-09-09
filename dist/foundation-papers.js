@@ -80,14 +80,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 1: Single-particle dynamics",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/dynamics-and-relativity/htl1.pdf",
-  "description": "4-page exam or review paper covering newtonian dynamics, energy & momentum, central forces. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering newtonian dynamics, energy & momentum, central forces. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-newtonian-dynamics",
@@ -109,14 +109,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 2: Central forces, rockets and orbits",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/dynamics-and-relativity/htl2.pdf",
-  "description": "4-page exam or review paper covering newtonian dynamics, energy & momentum, central forces. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering newtonian dynamics, energy & momentum, central forces. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-newtonian-dynamics",
@@ -138,14 +138,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 3: Orbital stability and rotating bodies",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/dynamics-and-relativity/htl3.pdf",
-  "description": "4-page exam or review paper covering newtonian dynamics, central forces, rigid bodies. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering newtonian dynamics, central forces, rigid bodies. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-newtonian-dynamics",
@@ -167,14 +167,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 1: Lagrangian formulation",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/classical-dynamics/mf1.pdf",
-  "description": "3-page exam or review paper covering lagrangian mechanics. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering lagrangian mechanics. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-lagrangian-mechanics"
@@ -192,7 +192,7 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 2: Normal modes and inertia tensors",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
@@ -200,7 +200,7 @@ export const foundationPapers = [
    "waves"
   ],
   "url": "https://davidtong.org/pdfs/teaching/classical-dynamics/mf2.pdf",
-  "description": "4-page exam or review paper covering oscillations, lagrangian mechanics, rigid bodies, normal modes. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering oscillations, lagrangian mechanics, rigid bodies, normal modes. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-oscillations",
@@ -224,14 +224,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 3: Euler equations and spinning bodies",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/classical-dynamics/mf3.pdf",
-  "description": "3-page exam or review paper covering rigid bodies. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering rigid bodies. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-rigid-bodies"
@@ -249,14 +249,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 4: Hamiltonian formulation",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "mechanics"
   ],
   "url": "https://davidtong.org/pdfs/teaching/classical-dynamics/mf4.pdf",
-  "description": "3-page exam or review paper covering hamiltonian mechanics, central forces, energy & momentum. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering hamiltonian mechanics, central forces, energy & momentum. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "mechanics-hamiltonian-mechanics",
@@ -1534,14 +1534,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 1: Electric fields and Gauss law",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "electromagnetism"
   ],
   "url": "https://davidtong.org/pdfs/teaching/electromagnetism/B10a.pdf",
-  "description": "3-page exam or review paper covering electrostatics, gauss’s law, potential & boundary conditions. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering electrostatics, gauss’s law, potential & boundary conditions. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "electromagnetism-electrostatics",
@@ -1563,14 +1563,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 2: Magnetic fields and induction",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
    "electromagnetism"
   ],
   "url": "https://davidtong.org/pdfs/teaching/electromagnetism/B10b.pdf",
-  "description": "3-page exam or review paper covering magnetostatics, induction, maxwell’s equations. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering magnetostatics, induction, maxwell’s equations. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "electromagnetism-magnetostatics",
@@ -1592,7 +1592,7 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 3: Electromagnetic waves and waveguides",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Undergraduate",
   "access": "Free",
   "topics": [
@@ -1600,7 +1600,7 @@ export const foundationPapers = [
    "waves"
   ],
   "url": "https://davidtong.org/pdfs/teaching/electromagnetism/B10c.pdf",
-  "description": "3-page exam or review paper covering maxwell’s equations, wave equation, superposition, dispersion. Select a subtopic to see the relevant questions.",
+  "description": "3-page problem sheet covering maxwell’s equations, wave equation, superposition, dispersion. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "electromagnetism-maxwell-equations",
@@ -1927,14 +1927,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 1: Ensembles, entropy and free energy",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Advanced",
   "access": "Free",
   "topics": [
    "thermal"
   ],
   "url": "https://davidtong.org/pdfs/teaching/statistical-physics/omg1.pdf",
-  "description": "4-page exam or review paper covering entropy, thermodynamic potentials. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering entropy, thermodynamic potentials. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "thermal-entropy",
@@ -1954,14 +1954,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 4: Thermodynamic identities and phase transitions",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Advanced",
   "access": "Free",
   "topics": [
    "thermal"
   ],
   "url": "https://davidtong.org/pdfs/teaching/statistical-physics/omg4.pdf",
-  "description": "4-page exam or review paper covering equations of state, entropy, thermodynamic potentials, maxwell relations, phase equilibrium. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering equations of state, entropy, thermodynamic potentials, maxwell relations, phase equilibrium. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "thermal-equations-of-state",
@@ -3369,14 +3369,14 @@ export const foundationPapers = [
   "title": "Cambridge · Example Sheet 1: Scattering: phase shifts, resonances and Born methods",
   "author": "David Tong · University of Cambridge",
   "provider": "Cambridge",
-  "type": "Exams",
+  "type": "Problems",
   "level": "Advanced",
   "access": "Free",
   "topics": [
    "quantum"
   ],
   "url": "https://davidtong.org/pdfs/teaching/topics-in-quantum-mechanics/fbd1.pdf",
-  "description": "4-page exam or review paper covering scattering. Select a subtopic to see the relevant questions.",
+  "description": "4-page problem sheet covering scattering. Select a subtopic to see the relevant questions.",
   "solutions": "Not supplied",
   "subtopics": [
    "quantum-scattering"

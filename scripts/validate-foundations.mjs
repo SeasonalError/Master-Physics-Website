@@ -31,6 +31,9 @@ for(const r of resources.filter(r=>r.subtopics)){
  if(evidence.solution){assert.equal(evidence.solution.httpStatus,200);assert.match(evidence.solution.sha256,/^[a-f0-9]{64}$/);}
 }
 assert.equal(foundationPapers.length,report.newResources);
+for(const r of foundationPapers.filter(r=>r.title.includes('Example Sheet'))){
+ assert.equal(r.type,'Problems',`Example sheet mislabeled as an exam: ${r.id}`);
+}
 assert.equal(Object.keys(existingPracticeFocus).length,report.existingResourcesTagged);
 for(const subtopic of practiceSubtopics){
  const filters={field:subtopic.field,subtopic:subtopic.id,level:'all',solutions:false};
