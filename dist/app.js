@@ -2,6 +2,7 @@ import {topics, families} from './topics.js';
 import {resources, reviewedAt} from './resources.js';
 import {exercises} from './exercises.js';
 import {semesters, particlePath} from './pathways.js';
+import {practiceSubtopics, subtopicsFor, validSubtopic, filterPractice, readPracticeFilters, practiceHash} from './practice-subtopics.js';
 
 const $ = (s, root=document) => root.querySelector(s);
 const main = $('#main');
@@ -23,7 +24,7 @@ const paths = {
 };
 const icon = type => `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">${paths[type]||paths.Notes}</svg>`;
 let wheelIndex=0, wheelFamily='All fields', visibleTopics=topics;
-let paperFilters={field:'all',level:'all',solutions:false,q:''};
+let paperFilters={field:'all',subtopic:'all',level:'all',solutions:false};
 let libraryFilters={field:'all',type:'all',access:'all',q:'',personal:false};
 let libraryLimit=24;
 let currentExercise=null, exerciseField='all';
@@ -38,9 +39,9 @@ function route(){
  const routeName=parts[0];
  navActive(routeName==='topic'?'explore':routeName);
  if(routeName==='explore') renderExplore();
- else if(routeName==='topic') renderTopic(parts[1],query.get('tab')||'reading');
+ else if(routeName==='topic') renderTopic(parts[1],query.get('tab')||'reading',query.get('subtopic'));
  else if(routeName==='library'){libraryFilters.q=query.get('q')||'';libraryFilters.personal=query.get('shelf')==='mine';libraryFilters.field=query.get('field')||'all';libraryLimit=24;renderLibrary();}
- else if(routeName==='practice'){exerciseField=query.get('field')||'all';paperFilters.field=exerciseField;renderPractice(query.get('mode')||'papers');}
+ else if(routeName==='practice'){paperFilters=readPracticeFilters(query);exerciseField=paperFilters.field;renderPractice(query.get('mode')||'papers');}
  else if(routeName==='pathways')renderPathways();
  else if(routeName==='sources')renderSources();
  else {page(`<div class="empty-state"><h1>Outside the atlas</h1><p>This page could not be found.</p><a class="button" href="#explore">Return to the explorer</a></div>`);}
@@ -89,20 +90,24 @@ function drawWheel(){
 }
 window.addEventListener('resize',()=>{if($('#orbit-stage'))drawWheel();});
 
-function resourceCard(r){
+function resourceCard(r,subtopicId='all'){
  const t=topic(r.topics[0]);
  const label=r.type==='Book'?(r.access==='Free'?'Read book':'View book'):isPaper(r)?'Open questions':r.type==='Course'?'Open course':r.type==='Data'?'Explore resource':'Read notes';
- return `<article class="resource-card" style="--topic-color:${t?.color||'#d8fb76'}"><div class="resource-meta"><span class="resource-kind">${icon(r.type)}${esc(r.type.toUpperCase())}</span><span>${esc(r.provider)}</span></div>${r.personal?`<div class="reading-label">${esc(r.personal)}</div>`:''}<h3>${esc(r.title)}</h3><p class="author">${esc(r.author)}</p><p class="description">${esc(r.description)}</p><div class="resource-tags"><span class="tag ${r.access==='Free'?'lime':''}">${esc(r.access==='Paid'?'Buy / borrow':r.access)}</span><span class="tag">${esc(r.level)}</span>${r.solutions?`<span class="tag ${r.solutionUrl?'purple':''}">${esc(r.solutions)}</span>`:''}</div>${r.note?`<p class="resource-note">${esc(r.note)}</p>`:''}<div class="resource-actions">${ext(r.url,label)}${r.solutionUrl?ext(r.solutionUrl,r.solutions==='Answer keys'?'Answer keys':r.solutions==='Hints only'?'Open hints':'View solutions','solution-link'):''}</div></article>`;
+ return `<article class="resource-card" style="--topic-color:${t?.color||'#d8fb76'}"><div class="resource-meta"><span class="resource-kind">${icon(r.type)}${esc(r.type.toUpperCase())}</span><span>${esc(r.provider)}</span></div>${r.personal?`<div class="reading-label">${esc(r.personal)}</div>`:''}<h3>${esc(r.title)}</h3><p class="author">${esc(r.author)}</p><p class="description">${esc(r.description)}</p><div class="resource-tags"><span class="tag ${r.access==='Free'?'lime':''}">${esc(r.access==='Paid'?'Buy / borrow':r.access)}</span><span class="tag">${esc(r.level)}</span>${r.solutions?`<span class="tag ${r.solutionUrl?'purple':''}">${esc(r.solutions)}</span>`:''}</div>${r.focus?.[subtopicId]?`<p class="resource-note"><strong>For this topic:</strong> ${esc(r.focus[subtopicId])}</p>`:''}${r.note?`<p class="resource-note">${esc(r.note)}</p>`:''}<div class="resource-actions">${ext(r.url,label)}${r.solutionUrl?ext(r.solutionUrl,r.solutions==='Answer keys'?'Answer keys':r.solutions==='Hints only'?'Open hints':'View solutions','solution-link'):''}${r.sourceUrl?ext(r.sourceUrl,'Course source','solution-link'):''}</div></article>`;
 }
-function renderTopic(id,tab='reading'){
+function renderTopic(id,tab='reading',requestedSubtopic='all'){
  const t=topic(id);if(!t){page(`<div class="empty-state"><h1>Field not found</h1><a class="button" href="#explore">Explore the atlas</a></div>`);return;}
  const all=byTopic(id),books=all.filter(r=>r.type==='Book'),papers=all.filter(isPaper),learn=all.filter(r=>!isPaper(r));
  const topicExercises=exercises.filter(e=>e.topic===id);
- page(`<div class="breadcrumb"><a href="#explore">Explore</a><span>/</span><span>${t.family}</span></div><section class="topic-heading"><div><div class="eyebrow">FIELD ${number(topics.indexOf(t)+1)} &nbsp; / &nbsp; ${t.level}</div><h1>${t.name}</h1><p>${t.description}</p><div class="prereqs"><span>START WITH</span>${t.prerequisites.map(p=>`<span class="tag">${p}</span>`).join('')}</div><div class="topic-stats"><span><strong>${books.length}</strong>books</span><span><strong>${all.length}</strong>resources</span><span><strong>${papers.length}</strong>paper collections</span></div></div><div class="equation-panel" style="--topic-color:${t.color}"><span class="equation-index">${number(topics.indexOf(t)+1)} / PHYSICS ATLAS</span><span class="equation">${t.formula}</span><span class="micro">${t.short}</span></div></section>
+ const subtopicId=validSubtopic(id,requestedSubtopic), subtopics=subtopicsFor(id);
+ const focusedPapers=filterPractice(papers,{field:id,subtopic:subtopicId});
+ page(`<div class="breadcrumb"><a href="#explore">Explore</a><span>/</span><span>${t.family}</span></div><section class="topic-heading"><div><div class="eyebrow">FIELD ${number(topics.indexOf(t)+1)} &nbsp; / &nbsp; ${t.level}</div><h1>${t.name}</h1><p>${t.description}</p><div class="prereqs"><span>START WITH</span>${t.prerequisites.map(p=>`<span class="tag">${p}</span>`).join('')}</div><div class="topic-stats"><span><strong>${books.length}</strong>books</span><span><strong>${all.length}</strong>resources</span><span><strong>${papers.length}</strong>practice resources</span></div></div><div class="equation-panel" style="--topic-color:${t.color}"><span class="equation-index">${number(topics.indexOf(t)+1)} / PHYSICS ATLAS</span><span class="equation">${t.formula}</span><span class="micro">${t.short}</span></div></section>
  <nav class="tabs" aria-label="Field sections"><a class="tab ${tab==='reading'?'active':''}" href="#topic/${id}?tab=reading" ${tab==='reading'?'aria-current="page"':''}>Books &amp; learning <span>${learn.length}</span></a><a class="tab ${tab==='practice'?'active':''}" href="#topic/${id}?tab=practice" ${tab==='practice'?'aria-current="page"':''}>Problems &amp; answers <span>${papers.length+topicExercises.length}</span></a><a class="tab ${tab==='concepts'?'active':''}" href="#topic/${id}?tab=concepts" ${tab==='concepts'?'aria-current="page"':''}>Topic map <span>${t.units.length}</span></a></nav>
- ${tab==='practice'?`${topicExercises.length?`<div class="note-strip"><strong>Start with a focused exercise.</strong> Work through a question here, reveal a hint, then compare with a full solution. <a href="#practice?mode=exercises&field=${id}">Open ${topicExercises.length===1?'the exercise':topicExercises.length+' exercises'} →</a></div>`:''}<div class="resource-grid">${papers.length?papers.map(resourceCard).join(''):`<div class="empty-state"><h3>Start with the worked exercise</h3><p>The reading resources also contain exercises. A dedicated external paper collection has not yet been added for this field.</p><a class="button" href="#practice?mode=exercises&field=${id}">Open worked practice</a></div>`}</div>`:tab==='concepts'?`<div class="note-strip">Use this as a study checklist. The order is a suggested learning sequence; the linked books and courses supply the lessons.</div><div class="topic-units">${t.units.map((u,i)=>`<div class="unit-row"><span>${number(i+1)}</span><h3>${u}</h3></div>`).join('')}</div><div class="section-heading"><h2>Where this can take you</h2></div><div class="path-next">${t.next.map(id=>`<a class="button secondary" href="#topic/${id}">${topic(id).name} ↗</a>`).join('')}</div>`:`<div class="resource-grid">${learn.map(resourceCard).join('')}</div>`}`);
+ ${tab==='practice'?`${topicExercises.length?`<div class="note-strip"><strong>Start with a focused exercise.</strong> Work through a question here, reveal a hint, then compare with a full solution. <a href="#practice?mode=exercises&field=${id}">Open ${topicExercises.length===1?'the exercise':topicExercises.length+' exercises'} →</a></div>`:''}${subtopics.length?`<div class="filter-bar"><label>Practice subtopic<select data-filter="topic-subtopic" data-field="${id}">${subtopicOptions(id,subtopicId)}</select></label><a class="text-link" href="${practiceHash({field:id,subtopic:subtopicId,level:'all',solutions:false})}">Filter by level and solutions ↗</a></div><p class="results-line" aria-live="polite"><strong>${focusedPapers.length}</strong> papers, problem sets and collections${subtopicId!=='all'?' · '+esc(practiceSubtopics.find(x=>x.id===subtopicId).name):''}</p>`:''}<div class="resource-grid">${focusedPapers.length?focusedPapers.map(r=>resourceCard(r,subtopicId)).join(''):`<div class="empty-state"><h3>Start with the worked exercise</h3><p>The reading resources also contain exercises. A dedicated external paper collection has not yet been added for this field.</p><a class="button" href="#practice?mode=exercises&field=${id}">Open worked practice</a></div>`}</div>`:tab==='concepts'?`<div class="note-strip">Use this as a study checklist. The order is a suggested learning sequence; the linked books and courses supply the lessons.</div><div class="topic-units">${t.units.map((u,i)=>{const subtopic=subtopics.find(x=>x.name===u);return subtopic?`<a class="unit-row practice-unit" href="#topic/${id}?tab=practice&subtopic=${subtopic.id}"><span>${number(i+1)}</span><h3>${u}</h3><span>${filterPractice(papers,{field:id,subtopic:subtopic.id}).length} papers ↗</span></a>`:`<div class="unit-row"><span>${number(i+1)}</span><h3>${u}</h3></div>`;}).join('')}</div><div class="section-heading"><h2>Where this can take you</h2></div><div class="path-next">${t.next.map(id=>`<a class="button secondary" href="#topic/${id}">${topic(id).name} ↗</a>`).join('')}</div>`:`<div class="resource-grid">${learn.map(r=>resourceCard(r)).join('')}</div>`}`);
 }
 
+function subtopicOptions(field,selected){return `<option value="all">All subtopics</option>${subtopicsFor(field).map(s=>`<option value="${s.id}" ${s.id===selected?'selected':''}>${esc((field==='all'?topic(s.field).short+' · ':'')+s.name)} (${filterPractice(resources,{field:s.field,subtopic:s.id}).length})</option>`).join('')}`;}
+function syncPaperRoute(){history.replaceState(null,'',practiceHash(paperFilters));}
 function fieldOptions(selected){return `<option value="all">All fields</option>${topics.map(t=>`<option value="${t.id}" ${t.id===selected?'selected':''}>${t.name}</option>`).join('')}`;}
 function selectOptions(options,selected){return options.map(([v,l])=>`<option value="${v}" ${v===selected?'selected':''}>${l}</option>`).join('');}
 function matchesQuery(r,q){return `${r.title} ${r.author} ${r.provider} ${r.description} ${r.topics.map(id=>topic(id)?.name).join(' ')} ${r.tags?.join(' ')||''}`.toLowerCase().includes(q.toLowerCase().trim());}
@@ -115,21 +120,23 @@ function updateLibrary(){
  const f=libraryFilters;
  const list=resources.filter(r=>(f.field==='all'||r.topics.includes(f.field))&&(f.type==='all'||r.type===f.type)&&(f.access==='all'||r.access===f.access)&&(!f.personal||r.personal)&&matchesQuery(r,f.q));
  $('#library-count').innerHTML=`<strong>${list.length}</strong> ${list.length===1?'resource':'resources'}${f.personal?' in your reading list':''}${list.length>libraryLimit?` · showing ${libraryLimit}`:''}`;
- $('#library-results').innerHTML=list.length?list.slice(0,libraryLimit).map(resourceCard).join(''):`<div class="empty-state"><h3>No resources found</h3><p>Try a broader search or clear the filters.</p><button class="button secondary" data-action="reset-library">Clear filters</button></div>`;
+ $('#library-results').innerHTML=list.length?list.slice(0,libraryLimit).map(r=>resourceCard(r)).join(''):`<div class="empty-state"><h3>No resources found</h3><p>Try a broader search or clear the filters.</p><button class="button secondary" data-action="reset-library">Clear filters</button></div>`;
  $('#library-more').innerHTML=list.length>libraryLimit?`<button class="button secondary load-more" data-action="load-more">Show more resources <span aria-hidden="true">↓</span></button>`:'';
 }
 function renderPractice(mode){
- page(`<div class="intro-row"><div><div class="eyebrow">THE PROBLEM ROOM</div><h1>Understanding takes practice.</h1><p>Make an attempt. Follow the reasoning. Come back to what challenged you.</p></div></div><nav class="tabs practice-tabs" aria-label="Practice formats"><a class="tab ${mode==='papers'?'active':''}" href="#practice?mode=papers${exerciseField!=='all'?'&field='+exerciseField:''}" ${mode==='papers'?'aria-current="page"':''}>University papers <span>${paperCount}</span></a><a class="tab ${mode==='exercises'?'active':''}" href="#practice?mode=exercises${exerciseField!=='all'?'&field='+exerciseField:''}" ${mode==='exercises'?'aria-current="page"':''}>Worked practice <span>${exercises.length}</span></a></nav><div id="practice-content"></div>`);
+ page(`<div class="intro-row"><div><div class="eyebrow">THE PROBLEM ROOM</div><h1>Understanding takes practice.</h1><p>Make an attempt. Follow the reasoning. Come back to what challenged you.</p></div></div><nav class="tabs practice-tabs" aria-label="Practice formats"><a class="tab ${mode==='papers'?'active':''}" href="${practiceHash(paperFilters)}" ${mode==='papers'?'aria-current="page"':''}>University papers <span>${paperCount}</span></a><a class="tab ${mode==='exercises'?'active':''}" href="#practice?mode=exercises${exerciseField!=='all'?'&field='+exerciseField:''}" ${mode==='exercises'?'aria-current="page"':''}>Worked practice <span>${exercises.length}</span></a></nav><div id="practice-content"></div>`);
  if(mode==='exercises')renderExercises();else renderPapers();
 }
 function renderPapers(){
- $('#practice-content').innerHTML=`<div class="note-strip">Question papers and answers open on their original source. <strong>“Official solutions”</strong> means the source supplies worked answers. Answer keys, selected solutions, hints, and unavailable solutions are labeled separately.</div><div class="filter-bar"><label>Field<select data-filter="paper-field">${fieldOptions(paperFilters.field)}</select></label><label>Level<select data-filter="paper-level">${selectOptions([['all','All levels'],['Foundation','Foundation'],['Undergraduate','Undergraduate'],['Advanced','Advanced'],['Graduate','Graduate']],paperFilters.level)}</select></label><label class="check-filter"><input type="checkbox" data-filter="paper-solutions" ${paperFilters.solutions?'checked':''}>Worked solutions available</label></div><p class="results-line" id="paper-count" aria-live="polite"></p><div class="resource-grid" id="paper-results"></div>`;
+ $('#practice-content').innerHTML=`<div class="note-strip">Choose a field and subtopic for focused revision. Each foundational subtopic has at least five individual sheets or exams; the topic notes identify relevant questions in mixed papers. Question papers and answers open on their original source. <strong>“Official solutions”</strong> means the source supplies worked answers. Answer keys, selected solutions, hints, and unavailable solutions are labeled separately.</div><div class="filter-bar"><label>Field<select data-filter="paper-field">${fieldOptions(paperFilters.field)}</select></label>${subtopicsFor(paperFilters.field).length?`<label>Subtopic<select data-filter="paper-subtopic">${subtopicOptions(paperFilters.field,paperFilters.subtopic)}</select></label>`:''}<label>Level<select data-filter="paper-level">${selectOptions([['all','All levels'],['Foundation','Foundation'],['Undergraduate','Undergraduate'],['Advanced','Advanced'],['Graduate','Graduate']],paperFilters.level)}</select></label><label class="check-filter"><input type="checkbox" data-filter="paper-solutions" ${paperFilters.solutions?'checked':''}>Worked solutions available</label></div><p class="results-line" id="paper-count" aria-live="polite"></p><div class="resource-grid" id="paper-results"></div>`;
  updatePapers();
 }
 function updatePapers(){
- const f=paperFilters,list=resources.filter(r=>isPaper(r)&&(f.field==='all'||r.topics.includes(f.field))&&(f.level==='all'||r.level===f.level)&&(!f.solutions||['Official solutions','Selected solutions'].includes(r.solutions)));
- $('#paper-count').innerHTML=`<strong>${list.length}</strong> paper and problem collections`;
- $('#paper-results').innerHTML=list.length?list.map(resourceCard).join(''):`<div class="empty-state"><h3>No paper collections match these filters</h3><p>Try all levels, or use the worked practice exercises for this field.</p><button class="button secondary" data-action="reset-papers">Clear filters</button></div>`;
+ const paperTab=$('.practice-tabs .tab');
+ if(paperTab)paperTab.href=practiceHash(paperFilters);
+ const f=paperFilters,list=filterPractice(resources,f);
+ $('#paper-count').innerHTML=`<strong>${list.length}</strong> papers, problem sets and collections${f.subtopic!=='all'?' · '+esc(practiceSubtopics.find(s=>s.id===f.subtopic)?.name):''}`;
+ $('#paper-results').innerHTML=list.length?list.map(r=>resourceCard(r,f.subtopic)).join(''):`<div class="empty-state"><h3>No papers match these filters</h3><p>Try all levels, or use the worked practice exercises for this field.</p><button class="button secondary" data-action="reset-papers">Clear filters</button></div>`;
 }
 function renderExercises(){
  const list=exerciseField==='all'?exercises:exercises.filter(e=>e.topic===exerciseField);
@@ -162,7 +169,7 @@ main.addEventListener('click',event=>{
  if(action==='orbit-card'){if($('#orbit-stage').dataset.dragged)return;if(Number(value)===wheelIndex)location.hash=`topic/${visibleTopics[wheelIndex].id}`;else{wheelIndex=Number(value);drawWheel();}}
  if(action==='reset-library'){libraryFilters={field:'all',type:'all',access:'all',q:'',personal:false};libraryLimit=24;renderLibrary();$('#library-search').focus();}
  if(action==='load-more'){const previous=libraryLimit;libraryLimit+=24;updateLibrary();$('#library-results').children[previous]?.querySelector('a')?.focus({preventScroll:true});}
- if(action==='reset-papers'){paperFilters={field:'all',level:'all',solutions:false,q:''};renderPapers();}
+ if(action==='reset-papers'){paperFilters={field:'all',subtopic:'all',level:'all',solutions:false};exerciseField='all';syncPaperRoute();renderPractice('papers');$('[data-filter="paper-field"]').focus();}
  if(action==='exercise'){currentExercise=value;drawExercise();}
  if(action==='exercise-step'){const list=exerciseField==='all'?exercises:exercises.filter(e=>e.topic===exerciseField),i=list.findIndex(e=>e.id===currentExercise);currentExercise=list[i+Number(value)]?.id||currentExercise;drawExercise();$('#exercise-work').scrollIntoView({block:'start',behavior:'smooth'});}
 });
@@ -170,9 +177,11 @@ main.addEventListener('change',event=>{
  const key=event.target.dataset.filter,v=event.target.value;if(!key)return;
  if(key.startsWith('library-')){libraryFilters[key.slice(8)]=v;libraryLimit=24;updateLibrary();}
  if(key==='personal'){libraryFilters.personal=event.target.checked;libraryLimit=24;updateLibrary();}
- if(key==='paper-field'){paperFilters.field=v;updatePapers();}
- if(key==='paper-level'){paperFilters.level=v;updatePapers();}
- if(key==='paper-solutions'){paperFilters.solutions=event.target.checked;updatePapers();}
+ if(key==='paper-field'){paperFilters.field=v;paperFilters.subtopic='all';exerciseField=v;syncPaperRoute();renderPractice('papers');$('[data-filter="paper-field"]').focus();}
+ if(key==='paper-subtopic'){paperFilters.subtopic=validSubtopic(paperFilters.field,v);syncPaperRoute();updatePapers();}
+ if(key==='topic-subtopic'){location.hash=`topic/${event.target.dataset.field}?tab=practice${v==='all'?'':'&subtopic='+v}`;}
+ if(key==='paper-level'){paperFilters.level=v;syncPaperRoute();updatePapers();}
+ if(key==='paper-solutions'){paperFilters.solutions=event.target.checked;syncPaperRoute();updatePapers();}
  if(key==='exercise-field'){exerciseField=v;currentExercise=null;renderExercises();}
 });
 function launchSearch(){if(routeParts().parts[0]!=='library')location.hash='library';setTimeout(()=>$('#library-search')?.focus(),50);}

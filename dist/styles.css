@@ -19,3 +19,6 @@
 .orbit-stage{height:22.2rem}
 @media(max-width:760px){.topic-orbit-card{--card-width:min(16.125rem,calc(100% - 3rem));height:18rem}.orbit-stage{height:20.5rem}.resource-card .description,.selected-summary p,.mini-path p{font-size:1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+/* Focused foundational practice uses the existing field and filter layouts. */
+.practice-unit h3{flex:1}.practice-unit:hover{border-color:var(--accent)}.practice-unit>span:last-child{color:var(--accent);white-space:nowrap}.resource-note strong{color:var(--text);font-weight:500}

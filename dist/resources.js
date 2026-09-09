@@ -1,3 +1,4 @@
+import {foundationPapers,existingPracticeFocus} from './foundation-papers.js';
 // Source metadata, independently described for Physics Atlas. Original materials remain with their owners.
 export const reviewedAt = '7 September 2026';
 const rows=[];
@@ -302,4 +303,4 @@ add('cms-tutorial','CMS HEP data-analysis tutorial','Christian Sander & Alexande
 add('root-tutorials','ROOT analysis tutorials','ROOT collaboration','CERN','Data','computational experimental particle','https://root.cern/doc/v638/group__Tutorials.html','Official examples for histograms, fitting, data trees, and other analysis tools. This link targets the documented ROOT 6.38 collection.');
 add('newman-data','Numerical physics programs and data','Mark Newman, second edition','Michigan','Data','computational','https://websites.umich.edu/~mejn/cp2/programs.html','Author-provided Python examples and datasets for the second-edition exercises, including the data-science chapter.');
 
-export const resources=rows;
+export const resources=[...rows.map(r=>existingPracticeFocus[r.id]?{...r,...existingPracticeFocus[r.id]}:r),...foundationPapers];

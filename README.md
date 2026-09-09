@@ -2,14 +2,14 @@
 
 A physics learning website with a rotating topic explorer, a searchable resource library, official university practice links, original worked exercises, and a semester study map.
 
-The first collection includes 28 fields, 114 resource entries, 31 books, 36 paper/problem collections, and 38 original exercises. Resources point to their authors, institutions, publishers, or catalogue records. Some entries share a landing page because it contains both notes and problem sheets.
+The current collection includes 29 fields, 392 resource entries, 33 books, 308 paper/problem resources, and 40 original exercises. The foundational practice expansion adds 118 individual papers and sheets, with at least five distinct documents for each of the 38 foundational subtopics. See the [coverage and source review](docs/foundational-practice-2026-09-09.md). Resources point to their authors, institutions, publishers, or catalogue records. Some entries share a landing page because it contains both notes and problem sheets.
 
 ## Use the site
 
 - Rotate the topic cards with the mouse wheel, left/right buttons, arrow keys, or a horizontal drag. Select a card, then open that field.
 - Search by title, author, subject, or institution. Filter by field, resource type, access, or the personal reading list.
 - Open a field's Books & learning, Problems & answers, or Topic map views.
-- Use the Practice page for source-hosted papers or original exercises. Hints and worked solutions are separate disclosures.
+- Use the Practice page for source-hosted papers or original exercises. For CM, EM, thermal physics, oscillations/waves and QM, choose a subtopic or click a unit in the Topic map. Bookmark the filtered URL for revision. Hints and worked solutions are separate disclosures.
 - Scratchpad text stays in memory while navigating within a tab. A reload clears it; it is not uploaded or saved across devices.
 - The study paths cover the user's planned physics and supporting mathematics in semesters 3–8, plus a suggested particle-physics route. They are not an official university syllabus.
 
@@ -35,6 +35,8 @@ Both entrypoints use relative asset paths and hash-based routes, so the site sup
 
 - `dist/topics.js`: field descriptions, prerequisites, suggested topic order, related fields, and visual accents.
 - `dist/resources.js`: the source catalogue, access labels, official-answer links, and personal reading labels.
+- `dist/foundation-papers.js`: individually reviewed foundational question documents, subtopic tags and question guidance.
+- `dist/practice-subtopics.js`: foundational units, practice filters and bookmarkable routes.
 - `dist/exercises.js`: original questions, hints, worked reasoning, and consistency checks.
 - `dist/pathways.js`: semester maps and particle-physics progression.
 - `dist/app.js`: rendering, routing, search, filters, the carousel, and exercise interaction.

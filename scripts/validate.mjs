@@ -31,7 +31,7 @@ for(const r of resources){
 for(const e of exercises){assert(ids.has(e.topic));assert(e.question&&e.hint&&e.steps.length>=3&&e.answer,`Incomplete exercise ${e.id}`);}
 for(const s of semesters)for(const item of s.items)assert(ids.has(item.topic));
 for(const step of particlePath)assert(ids.has(step.topic));
-for(const name of ['app.js','topics.js','resources.js','exercises.js','pathways.js'])execFileSync(process.execPath,['--check',resolve(root,'dist',name)]);
+for(const name of ['app.js','topics.js','resources.js','exercises.js','pathways.js','foundation-papers.js','practice-subtopics.js'])execFileSync(process.execPath,['--check',resolve(root,'dist',name)]);
 for(const entrypoint of ['index.html','dist/index.html']){
  const html=await readFile(resolve(root,entrypoint),'utf8');
  for(const [,path] of html.matchAll(/(?:href|src)="\.\/([^"]+)"/g))await access(resolve(root,dirname(entrypoint),path));
@@ -39,6 +39,7 @@ for(const entrypoint of ['index.html','dist/index.html']){
  assert(html.includes('name="viewport"'),`Missing responsive viewport in ${entrypoint}`);
 }
 await access(resolve(root,'.nojekyll'));
+await import('./validate-foundations.mjs');
 const app=await readFile(resolve(root,'dist/app.js'),'utf8');
 for(const [,id] of app.matchAll(/href="#topic\/([a-z-]+)(?:[?"#])/g))assert(ids.has(id),`Broken literal topic route ${id}`);
 console.log(JSON.stringify({status:'passed',fields:topics.length,resources:resources.length,books:resources.filter(r=>r.type==='Book').length,paperCollections:resources.filter(r=>['Problems','Exams'].includes(r.type)).length,workedExercises:exercises.length,semesters:semesters.length,checks:['module syntax','asset references','catalogue schema','topic links','book and exercise coverage','solution-link consistency']},null,2));
